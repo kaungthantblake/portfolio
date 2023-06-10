@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1 onclick="this.innerHTML  = 'Ooops!! like what you wanna do'">
+    click on this text!
+    </H1>
+<h1 onclick="changeText(this)">click on this Text !</h1>
+<button  onclick="this.style.display='none'">
+    Click to Remove Me!
+   </button>
+   <h1 id="demo"> Hello java script</h1>
+<script>
+    function changeText(id){
+        id.innerHTML = "Ooops!"
+    }
+
+    window.addEventListener("keypress", function(){
+   console.log("Keyboard Got Pressed");
+ });
+
+ document.getElementById('demo').addEventListener("click", function(event){
+   console.log(this.innerHTML);
+ });
+
+</script>
+
+</body>
+</html>
